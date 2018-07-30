@@ -15,7 +15,7 @@ public class GameWorld { // Zuständig für Logik
 	}
 
 	public void update(float delta) {
-		System.out.println("update");
+		
 	}
 
 	public void dispose() {

@@ -24,7 +24,7 @@ public class GameRenderer { // Zuständig fürs zeichnen
 		batch.draw(gameWorld.getPlayer().getTest(), gameWorld.getPlayer().getPosition().x, gameWorld.getPlayer().getPosition().y,
 				gameWorld.getPlayer().getWidth(), gameWorld.getPlayer().getHeight()); 
 		batch.end(); 
-		System.out.println("render");
+		
 	}
 
 	public void dispose() {

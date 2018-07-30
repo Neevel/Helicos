@@ -1,18 +1,22 @@
 package neevel.helicos.Gamestate;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 
 public class GameState implements Screen { // Screen = Zustand
 
 	private GameWorld gameWorld; 
 	private GameRenderer gameRenderer; 
-	
+	private GameControls gameControls; 
 	
 
 	@Override
 	public void show() { // wie Konstruktor
 		gameWorld = new GameWorld(); 
 		gameRenderer = new GameRenderer(gameWorld); 
+		gameControls = new GameControls(this, gameWorld); 
+		Gdx.input.setInputProcessor(gameControls);
+		
 		
 	}
 	// GameLoop: Spielobjekte aktualisieren, SpielObjekte Zeichnen, Interpolieren
