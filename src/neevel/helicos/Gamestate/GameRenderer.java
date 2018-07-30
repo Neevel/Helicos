@@ -21,7 +21,8 @@ public class GameRenderer { // Zuständig fürs zeichnen
 		Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		
 		batch.begin();
-		batch.draw(gameWorld.getPlayer().getTest(), gameWorld.getPlayer().getPosition().x, gameWorld.getPlayer().getPosition().y, gameWorld.getPlayer().getWidth(), gameWorld.getPlayer().getHeight()); 
+		batch.draw(gameWorld.getPlayer().getTest(), gameWorld.getPlayer().getPosition().x, gameWorld.getPlayer().getPosition().y,
+				gameWorld.getPlayer().getWidth(), gameWorld.getPlayer().getHeight()); 
 		batch.end(); 
 		System.out.println("render");
 	}

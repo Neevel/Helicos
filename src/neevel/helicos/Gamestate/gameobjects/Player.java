@@ -36,6 +36,6 @@ public class Player {
 	public Vector2 getPosition() {
 		return position;
 	}
-
+ 
 
 }
